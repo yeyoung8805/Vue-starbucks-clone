@@ -34,6 +34,7 @@ header .logo {
 }
 
 header .sub-menu {
+  display: flex; /* search icon이 수평으로 배치되게 함 */
 }
 header .sub-menu ul.menu {
   font-family: Arial, sans-serif;
