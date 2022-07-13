@@ -37,13 +37,27 @@ header .sub-menu {
 
 }
 header .sub-menu ul.menu {
+  font-family: Arial, sans-serif;
   display: flex; /*menu 가 수직에서 -> 수평으로 위치하게 됨*/
 }
 header .sub-menu ul.menu li {
-
+  position: relative;
+}
+header .sub-menu ul.menu li::before {
+  content: "";
+  /*display: block; */ /*position: absolute; 가 있기 때문에 선언하지 않아도 block 요소처럼 된다. */
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .sub-menu ul.menu li:first-child::before {
+  display: none;
 }
 header .sub-menu ul.menu li a {
-  background-color: red;
   font-size: 12px;
   padding: 11px 16px;
   display: block;
