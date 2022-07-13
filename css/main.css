@@ -1,5 +1,31 @@
+/* COMMON */
 body {
-  color: red;
-  font-size: 100px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
   font-family: 'Nanum Gothic', sans-serif;
+}
+img {
+  display: block; /*이미지를 인라인이 아닌 상자 취급 하겠다는 뜻*/
+}
+
+
+/* HEADER */
+header {
+  background-color: royalblue;
+}
+header .inner {
+  width: 1100px;
+  height: 120px;
+  margin: 0 auto; /*결과물을 가운데 정렬시켜준다.*/
+  background-color: orange;
+  position: relative;
+}
+header .logo {
+  height: 75px;
+  position: absolute; /*위 부모 요소인 .inner의 position:relative 를 따르게 된다.*/
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
