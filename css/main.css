@@ -30,10 +30,12 @@ header .logo {
   top: 0;
   bottom: 0;
   margin: auto;
-  display: none;
 }
 
 header .sub-menu {
+  position: absolute; /* .inner 안의 .sub-menu 가 우측으로 가게 함 */
+  top: 10px;
+  right: 0;
   display: flex; /* search icon이 수평으로 배치되게 함 */
 }
 header .sub-menu ul.menu {
