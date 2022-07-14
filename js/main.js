@@ -18,6 +18,7 @@ searchInputEl.addEventListener('blur', function() { //blur 는 focus 이벤트�
 
 
 const badgeEl = document.querySelector('header .badges');
-window.addEventListener('scroll', function() {
-  console.log('scroll!');
-});
+// _.throttle(함수, 시간) 함수를 통해 안에 실행되는 기능의 발생횟수를 제한한다.
+window.addEventListener('scroll', _.throttle(function() {
+  console.log('scroll');
+}, 300));
