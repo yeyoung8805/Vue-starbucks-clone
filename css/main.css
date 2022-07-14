@@ -18,6 +18,32 @@ a {
   margin: 0 auto;
   position: relative;
 }
+.btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: .4s;
+}
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse {
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse:hover {
+  background-color: transparent;
+  color: #333;
+}
 
 /* HEADER */
 header {
@@ -192,7 +218,6 @@ header .badges .badge {
 }
 .visual .inner {
   height: 646px;
-  background-color: orange;
 }
 .visual .title {
   position: absolute;
