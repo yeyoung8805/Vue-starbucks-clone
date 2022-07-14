@@ -121,6 +121,20 @@ header .main-menu .item:hover .item__name {
   color: #669900;
   border-radius: 6px 6px 0 0;
 }
-header .main-menu .item  .item__contents {
-
+header .main-menu .item .item__contents {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+}
+header .main-menu .item:hover .item__contents {
+  display: block; /* hover 했을 경우에만 하위부분이 보이게 함 */
+}
+header .main-menu .item .item__contents .contents__menu {
+  background-color: red;
+  height: 200px;
+}
+header .main-menu .item .item__contents .contents__texture {
+  background-color: orange;
+  height: 100px;
 }
