@@ -50,7 +50,7 @@ a {
 }
 .btn.btn--brown:hover {
   color: #fff;
-  border-color: #592B18;
+  background-color: #592B18;
 }
 .btn.btn--gold {
   color: #D9AA8A;
@@ -58,7 +58,7 @@ a {
 }
 .btn.btn--gold:hover {
   color: #FFF;
-  border-color: #D9AA8A;
+  background-color: #D9AA8A;
 }
 .btn.btn--white {
   color: #FFF;
@@ -66,7 +66,7 @@ a {
 }
 .btn.btn--white:hover {
   color: #333;
-  border-color: #FFF;
+  background-color: #FFF;
 }
 
 
