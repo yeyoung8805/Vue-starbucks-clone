@@ -105,6 +105,7 @@ header .main-menu {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 1; /*main-menu 클릭하면 보이는 하위메뉴들이 우선순위를 높게 가지게 함*/
   display: flex;
 }
 header .main-menu .item {
