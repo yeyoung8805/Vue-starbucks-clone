@@ -15,3 +15,9 @@ searchInputEl.addEventListener('blur', function() { //blur 는 focus 이벤트�
   searchEl.classList.remove('focused');
   searchInputEl.setAttribute('placeholder', '');
 });
+
+
+const badgeEl = document.querySelector('header .badges');
+window.addEventListener('scroll', function() {
+  console.log('scroll!');
+});
