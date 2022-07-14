@@ -249,8 +249,10 @@ header .badges .badge {
   top: 88px;
   left: -10px;
 }
-.visual .title .btn {
-
+.visual .title .btn { /*위 title 의 위치에 따라 .btn 의 위치도 같이 이동한다.*/
+  position: absolute;
+  top: 259px;
+  left: 173px;
 }
 .visual .cup1.image {
   position: absolute;
