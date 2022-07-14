@@ -110,9 +110,6 @@ header .main-menu {
   z-index: 1; /*main-menu 클릭하면 보이는 하위메뉴들이 우선순위를 높게 가지게 함*/
   display: flex;
 }
-header .main-menu .item {
-
-}
 header .main-menu .item .item__name {
   padding: 10px 20px 34px 20px;
   font-family: Arial, sans-serif;
