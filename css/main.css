@@ -261,7 +261,7 @@ header .badges .badge {
 }
 .visual .cup1.text {
   position: absolute;
-  bottom: 38px;
+  top: 38px;
   right: 171px;
 }
 .visual .cup2.image {
@@ -271,7 +271,7 @@ header .badges .badge {
 }
 .visual .cup2.text {
   position: absolute;
-  bottom: 321px;
+  top: 321px;
   right: 416px;
 }
 .visual .spoon {
