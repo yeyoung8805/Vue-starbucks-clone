@@ -48,7 +48,7 @@ fadeEls.forEach(function(fadeEl, index) {
 });
 
 // new Swiper(선택자, 옵션)
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.notice-line .swiper-container', {
   direction: 'vertical',
   autoplay: true,
   loop: true,
