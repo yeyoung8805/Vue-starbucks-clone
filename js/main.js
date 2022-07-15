@@ -71,3 +71,18 @@ new Swiper('.promotion .swiper-container', {
     nextEl: '.promotion .swiper-next'
   }
 });
+
+
+const promotionEl = document.querySelector('.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion');
+let isHidePromotion = false; //false = 보이고 있다.
+promotionToggleBtn.addEventListener('click', function() {
+  isHidePromotion = !isHidePromotion //boolean 타입인 반대의 값을 대입한다.
+  if(isHidePromotion) {
+    // 숨김 처리 !!
+    promotionEl.classList.add('hide');
+  } else {
+    // 보임 처리!!
+    promotionEl.classList.remove('hide');
+  }
+});
