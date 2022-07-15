@@ -425,6 +425,10 @@ header .badges .badge {
   z-index: 1;
   cursor: pointer;
   outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
 }
 .notice .promotion .swiper-prev {
   left: 50%;
@@ -433,4 +437,9 @@ header .badges .badge {
 .notice .promotion .swiper-next {
   right: 50%;
   margin-right: -480px;
+}
+.notice .promotion .swiper-prev:hover,
+.notice .promotion .swiper-next:hover {
+  background-color: #333;
+  color: #fff;
 }
