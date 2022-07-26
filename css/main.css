@@ -499,6 +499,7 @@ header .badges .badge {
 .youtube {
   position: relative;
   height: 400px;
+  background-color: royalblue;
 }
 .youtube .youtube__area {
   width: 1920px;
