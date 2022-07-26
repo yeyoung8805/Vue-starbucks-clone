@@ -475,16 +475,20 @@ header .badges .badge {
   height: 241px;
 }
 .rewards .btn-group {
+  position: absolute;
+  bottom: 24px;
+  right: 0;
   width: 250px;
   display: flex;
   flex-wrap: wrap; /* 가로너비 250px 을 넘을것 같으면 줄바꿈을 허용하겠다는 뜻 */
 }
 .rewards .btn-group .btn.sign-up {
-
+  margin-right: 10px;
 }
 .rewards .btn-group .btn.sign-in {
-
+  width: 110px;
 }
 .rewards .btn-group .btn.gift {
-
+  margin-top: 10px;
+  flex-grow: 1; /*증가너비 비율을 1로 지정하면 (나머지들은 0이라) 가로로 최대를 가지게 된다.*/
 }
