@@ -505,6 +505,7 @@ header .badges .badge {
   background-color: orange;
   position: absolute;
   left: 50%; /*화면의 중앙에서 왼쪽의 절반을 비우고 오른쪽에 배치됨*/
+  margin-left: calc(1920px / -2); /*화면의 정중앙에 배치됨*/
 }
 .youtube .youtube__area::before { /* index.html에는 실제 존재하지 않지만, css 효과만을 위해 만든 영역 */
   content: "";
