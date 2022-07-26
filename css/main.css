@@ -492,3 +492,27 @@ header .badges .badge {
   margin-top: 10px;
   flex-grow: 1; /*증가너비 비율을 1로 지정하면 (나머지들은 0이라) 가로로 최대를 가지게 된다.*/
 }
+
+
+
+/* YOUTUBE VIDEO */
+.youtube {
+  position: relative;
+  height: 400px;
+}
+.youtube .youtube__area {
+  width: 1920px;
+  background-color: orange;
+  position: absolute;
+  left: 50%; /*화면의 중앙에서 왼쪽의 절반을 비우고 오른쪽에 배치됨*/
+}
+.youtube .youtube__area::before { /* index.html에는 실제 존재하지 않지만, css 효과만을 위해 만든 영역 */
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.youtube .youtube__cover {
+
+}
