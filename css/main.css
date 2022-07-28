@@ -696,14 +696,13 @@ header .badges .badge {
 .find-store .picture {
   border-radius: 50%; /*사각형 이미지가 원형으로 보이게 함*/
   box-shadow: 2px 2px 8px rgba(0, 0, 0, .5); /* x축=2px y축=2px blur=8px , rgba(0, 0, 0, .5);= 검정색의 50% 불투명도 */
+  position: absolute;
 }
 .find-store .picture1 {
-  position: absolute;
   top: -60px;
   left: 0;
 }
 .find-store .picture2 {
-  position: absolute;
   top: 150px;
   left: 250px;
 }
