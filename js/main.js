@@ -116,9 +116,8 @@ spyEls.forEach(function(spyEl) {
   new ScrollMagic
     .Scene({
       triggerElement: spyEl, /* 보여짐의 여부를 감시할 요소를 지정*/
-      triggerHook: .8, /* 뷰포트의 0 ~ 1 사이에서,  0.8지점이 보이기 시작하면 setClassToggle()을 수행한다는 뜻 */
-
+      triggerHook: .8 /* 뷰포트의 0 ~ 1 사이에서,  0.8지점이 보이기 시작하면 setClassToggle()을 수행한다는 뜻 */
     })
-    .setClassToggle()
-    .addTo();
+    .setClassToggle(spyEl, 'show') /* spyEl : 요소, show : 넣었다가 뺐다 토클할 클래스명 */
+    .addTo(new ScrollMagic.Controller());
 });
