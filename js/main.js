@@ -106,5 +106,5 @@ function floatingObject(selector, delay, size) { //매개변수 : 요소, 지연
   });
 }
 floatingObject('.floating1', 1, 15);
-floatingObject('.floating1', .5, 15);
-floatingObject('.floating1', 1.5, 20);
+floatingObject('.floating2', .5, 15);
+floatingObject('.floating3', 1.5, 20);
