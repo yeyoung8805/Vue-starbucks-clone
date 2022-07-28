@@ -674,3 +674,45 @@ header .badges .badge {
   right: 0;
   margin: auto;
 }
+
+
+/* FIND THE STORE */
+.find-store {
+  background-image: url("../images/find_store_bg.jpg");
+}
+.find-store .inner {
+  height: 400px;
+}
+.find-store .texture1 {
+  position: absolute;
+  top: 0;
+  left: 400px;
+}
+.find-store .texture2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.find-store .picture {
+  border-radius: 50%; /*사각형 이미지가 원형으로 보이게 함*/
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .5); /* x축=2px y축=2px blur=8px , rgba(0, 0, 0, .5);= 검정색의 50% 불투명도 */
+}
+.find-store .picture1 {
+  position: absolute;
+  top: -60px;
+  left: 0;
+}
+.find-store .picture2 {
+  position: absolute;
+  top: 150px;
+  left: 250px;
+}
+.find-store .text-group {
+  
+}
+.find-store .text-group .title {
+  
+}
+.find-store .text-group .description {
+  
+}
