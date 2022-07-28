@@ -93,7 +93,9 @@ function floatingObject(selector) {
   gsap.to(selector, 1, {
     y: 20, //20px 아래로 내려온다.
     repeat: -1, //무한반복
-    yoyo: true //내려왔다가 다시 올라가는 효과
+    yoyo: true, //내려왔다가 다시 올라가는 효과
+    ease: Power1.easeInOut, // gsap easing 이라고 검색후 -> power1, easeInOut 선택한 결과 
+    delay: 1 //애니메이션 지연시간
   });
 }
 floatingObject('.floating');
