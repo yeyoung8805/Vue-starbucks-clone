@@ -649,7 +649,7 @@ header .badges .badge {
   backface-visibility: hidden;
 }
 .reserve-store .medal .front {
-  
+  position: absolute; /*front와 back 이미지를 겹치게 하는 속성*/
 }
 .reserve-store .medal .back {
   
