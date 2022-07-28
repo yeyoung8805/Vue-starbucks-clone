@@ -640,13 +640,16 @@ header .badges .badge {
   height: 600px;
 }
 .reserve-store .medal {
-
+  width: 334px;
+  height: 334px;
+  perspective: 600px; /* 원근감을 줄수 있는 거리 설정 */
 }
 .reserve-store .medal .front,
 .reserve-store .medal .back {
   width: 334px;
   height: 334px;
   backface-visibility: hidden; /* .back 뒷면을 숨기는 속성*/
+  transition: 1s;
 }
 .reserve-store .medal .front {
   position: absolute; /*front와 back 이미지를 겹치게 하는 속성*/
