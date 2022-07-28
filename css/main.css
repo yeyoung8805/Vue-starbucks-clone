@@ -552,3 +552,26 @@ header .badges .badge {
   bottom: -200px;
   right: 0;
 }
+
+
+/* SEASON PRODUCT */
+.season-product {
+  background-image: url("../images/season_product_bg.jpg");
+}
+.season-product .inner {
+  height: 400px;
+}
+.season-product .text-group {
+  position: absolute;
+  top: 110px;
+  right: 110px;
+}
+.season-product .text-group .title {
+  margin-bottom: 10px;
+}
+.season-product .text-group .description {
+  margin-bottom: 15px;
+}
+.season-product .text-group .more {
+
+}
