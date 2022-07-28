@@ -618,10 +618,11 @@ header .badges .badge {
   width: 362px;
   display: flex; /*수평 정렬*/
   flex-wrap: wrap; /*줄바꿈이 가능*/
+  justify-content: flex-end; /*영역들의 우측에 맞춰 정렬됨*/
 }
 .pick-your-favorite .text-group .title {
-  
+  margin-bottom: 40px;
 }
 .pick-your-favorite .text-group .description {
-  
+  margin-bottom: 40px;
 }
