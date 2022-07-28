@@ -646,11 +646,11 @@ header .badges .badge {
 .reserve-store .medal .back {
   width: 334px;
   height: 334px;
-  backface-visibility: hidden;
+  backface-visibility: hidden; /* .back 뒷면을 숨기는 속성*/
 }
 .reserve-store .medal .front {
   position: absolute; /*front와 back 이미지를 겹치게 하는 속성*/
 }
 .reserve-store .medal .back {
-  
+  transform: rotateY(-180deg);
 }
