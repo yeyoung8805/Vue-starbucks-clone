@@ -707,11 +707,13 @@ header .badges .badge {
   left: 250px;
 }
 .find-store .text-group {
-  
+  position: absolute;
+  top: 120px;
+  left: 550px;
 }
 .find-store .text-group .title {
-  
+  margin-bottom: 20px;
 }
 .find-store .text-group .description {
-  
+  margin-bottom: 20px;
 }
