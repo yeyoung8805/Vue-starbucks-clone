@@ -614,7 +614,7 @@ header .badges .badge {
   padding: 110px 0;
 }
 .pick-your-favorite .text-group {
-  background-color: orange; /*영역 알아보게 임시로 설정*/
+  margin-left: 100px;
   width: 362px;
   display: flex; /*수평 정렬*/
   flex-wrap: wrap; /*줄바꿈이 가능*/
