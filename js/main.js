@@ -108,3 +108,17 @@ function floatingObject(selector, delay, size) { //매개변수 : 요소, 지연
 floatingObject('.floating1', 1, 15);
 floatingObject('.floating2', .5, 15);
 floatingObject('.floating3', 1.5, 20);
+
+
+
+const spyEls = document.querySelectorAll('section.scroll-spy');
+spyEls.forEach(function(spyEl) {
+  new ScrollMagic
+    .Scene({
+      triggerElement: spyEl, /* 보여짐의 여부를 감시할 요소를 지정*/
+      triggerHook: .8, /* 뷰포트의 0 ~ 1 사이에서,  0.8지점이 보이기 시작하면 setClassToggle()을 수행한다는 뜻 */
+
+    })
+    .setClassToggle()
+    .addTo();
+});
