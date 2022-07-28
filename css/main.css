@@ -638,6 +638,9 @@ header .badges .badge {
 }
 .reserve-store .inner {
   height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .reserve-store .medal {
   width: 334px;
