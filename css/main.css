@@ -639,3 +639,18 @@ header .badges .badge {
 .reserve-store .inner {
   height: 600px;
 }
+.reserve-store .medal {
+
+}
+.reserve-store .medal .front,
+.reserve-store .medal .back {
+  width: 334px;
+  height: 334px;
+  backface-visibility: hidden;
+}
+.reserve-store .medal .front {
+  
+}
+.reserve-store .medal .back {
+  
+}
