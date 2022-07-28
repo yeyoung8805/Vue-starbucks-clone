@@ -651,11 +651,11 @@ header .badges .badge {
 .reserve-store .medal .back {
   width: 334px;
   height: 334px;
+  position: absolute; /* back에서도 필요한 요소니까 여기 위에다가 공통으로 선언 */
   backface-visibility: hidden; /* .back 뒷면을 숨기는 속성*/
   transition: 1s;
 }
 .reserve-store .medal .front {
-  position: absolute; /*front와 back 이미지를 겹치게 하는 속성*/
   transform: rotateY(0deg);
 }
 .reserve-store .medal:hover .front {
@@ -666,4 +666,11 @@ header .badges .badge {
 }
 .reserve-store .medal:hover .back {
   transform: rotateY(0deg);
+}
+.reserve-store .medal:hover .back .btn{
+  position: absolute;
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
