@@ -650,7 +650,14 @@ header .badges .badge {
 }
 .reserve-store .medal .front {
   position: absolute; /*front와 back 이미지를 겹치게 하는 속성*/
+  transform: rotateY(0deg);
+}
+.reserve-store .medal:hover .front {
+  transform: rotateY(180deg);
 }
 .reserve-store .medal .back {
   transform: rotateY(-180deg);
+}
+.reserve-store .medal:hover .back {
+  transform: rotateY(0deg);
 }
