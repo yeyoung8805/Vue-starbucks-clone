@@ -88,14 +88,23 @@ promotionToggleBtn.addEventListener('click', function() {
 });
 
 
-function floatingObject(selector) {
+
+// 범위 랜덤 함수(소수점 2자리까지)
+function random(min, max) {
+  // `.toFixed()`를 통해 반환된 문자 데이터를,
+  // `parseFloat()`을 통해 소수점을 가지는 숫자 데이터로 변환
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+}
+function floatingObject(selector, delay, size) { //매개변수 : 요소, 지연시간, 위아래로 움직이는 크기(px)
   // gsap.to(요소, 지속시간, 옵션);
-  gsap.to(selector, 1, {
-    y: 20, //20px 아래로 내려온다.
+  gsap.to(selector, random(1.5, 2.5), {
+    y: size, //내려가는 크기(px)
     repeat: -1, //무한반복
     yoyo: true, //내려왔다가 다시 올라가는 효과
     ease: Power1.easeInOut, // gsap easing 이라고 검색후 -> power1, easeInOut 선택한 결과 
-    delay: 1 //애니메이션 지연시간
+    delay: random(0, delay) //애니메이션 지연시간 (0으로 시작해서 매개변수 delay시간까지의 random한 수)
   });
 }
-floatingObject('.floating');
+floatingObject('.floating1', 1, 15);
+floatingObject('.floating1', .5, 15);
+floatingObject('.floating1', 1.5, 20);
