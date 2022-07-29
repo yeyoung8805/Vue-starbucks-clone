@@ -840,3 +840,24 @@ footer .btn-group .btn {
 footer .btn-group .btn:last-child { /* 가장 마지막 .btn요소에는 우측 여백이 없도록 초기화 시킴 */
   margin-right: 0;
 }
+footer .info {
+  margin-top: 30px;
+  text-align: center;
+}
+footer .info span { /* span 은 inline 요소이므로, 수평(좌,우)에 대한 것만 정의 가능 */
+  margin-right: 20px;
+  color: #999;
+  font-size: 12px;
+}
+footer .info span:last-child {
+  margin-right: 0;
+}
+footer .copyright {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 12px;
+}
+footer .logo { /*logo 가 img 태그이므로, img는 display:block;요소도 가지고 있으므로 가운데정렬 되는 효과 가짐  */
+  margin: 30px auto 0; /*상=30px, 좌/우=auto(가운데 정렬을 의미), 하=0 */
+}
