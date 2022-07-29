@@ -45,6 +45,14 @@ window.addEventListener('scroll', _.throttle(function() {
   }
 }, 300));
 
+//버튼 클릭시 최상단으로 이동하도록 만듦
+const toTopEl = document.querySelector('#to-top');
+toTopEl.addEventListener('click', function() {
+  gsap.to(window, .7, { //window객체를 통해 화면을 제어한다는 뜻
+    scrollTo: 0, // .7초 동안 화면의 위치를 0인 최상단으로 옮겨주겠다는 뜻
+  });
+});
+
 
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 fadeEls.forEach(function(fadeEl, index) {
