@@ -28,11 +28,19 @@ window.addEventListener('scroll', _.throttle(function() {
       opacity: 0,
       display: 'none'
     });
+    // 버튼 보이기!
+    gsap.to('#to-top', .2, {
+      x: 0, //원래 자리로 돌아오도록
+    });
   }else {
     //배지 보이기
     gsap.to(badgeEl, .6, {
       opacity: 1,
       display: 'block'
+    });
+    //버튼 숨기기!
+    gsap.to('#to-top', .2, {
+      x: 100, //우측으로 100px만큼 사라지도록
     });
   }
 }, 300));
