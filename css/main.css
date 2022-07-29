@@ -828,3 +828,15 @@ footer .menu li a {
 footer .menu li a.green { /* a.green 은 a 태그의 일치선택자 green을 의미 */
   color: #669900;
 }
+footer .btn-group {
+  margin-top: 20px; /* 위 .menu 와 거리를 둔다. */
+  display: flex; /*수평 정렬*/
+  justify-content: center; /*수평 가운데정렬*/
+}
+footer .btn-group .btn {
+  font-size: 12px;
+  margin-right: 10px;
+}
+footer .btn-group .btn:last-child { /* 가장 마지막 .btn요소에는 우측 여백이 없도록 초기화 시킴 */
+  margin-right: 0;
+}
