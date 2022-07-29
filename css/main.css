@@ -860,3 +860,23 @@ footer .copyright {
 footer .logo { /*logo 가 img 태그이므로, img는 display:block;요소도 가지고 있으므로 가운데정렬 되는 효과 가짐  */
   margin: 30px auto 0; /*상=30px, 좌/우=auto(가운데 정렬을 의미), 하=0 */
 }
+
+
+
+/* to-top (button) */
+#to-top {
+  width: 42px;
+  height: 42px;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer; /* 마우스가 가까이 오면, 마우스 커서를 손가락 모양의 pointer로 지정 */
+  display: flex; /*수평정렬*/
+  justify-content: center; /*수평 가운데정렬*/
+  align-items: center; /*수직 가운데정렬*/
+  position: fixed; /*fixed의 뜻은, viewport 기준으로 배치한다.*/
+  bottom: 30px;
+  right: 30px;
+  z-index: 9; /* 9로 지정하여 다른 요소들보다 항상 위에 배치되도록 함 */
+}
