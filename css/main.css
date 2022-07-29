@@ -786,3 +786,31 @@ header .badges .badge {
   background-color: #fff;
   color: #333;
 }
+
+
+
+/* FOOTER */
+footer {
+  background-color: #272727;
+  border-top: 1px solid #333; /* 위 awards 섹셩과 구분하기 위함 */
+}
+footer .inner {
+  padding: 40px 0 60px 0; /* 상= 40px, 우= 0, 하= 60px, 좌= 0 */
+}
+footer .menu {
+  display: flex; /*수평 정렬*/
+  justify-content: center; /*수평 가운데정렬*/
+}
+footer .menu li {
+
+}
+footer .menu li a {
+  color: #ccc;
+  font-size: 12px;
+  font-weight: 700; /*글자두께는 700으로 두껍게*/
+  padding: 15px; /*내부 여백*/
+  display: block; /* a태그는 inline요소로 padding의 상하 내부여백을 적용할 수 없으므로 block으로 바꿔준다. */
+}
+footer .menu li a.green {
+  color: #669900;
+}
