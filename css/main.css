@@ -802,7 +802,21 @@ footer .menu {
   justify-content: center; /*수평 가운데정렬*/
 }
 footer .menu li {
-
+  position: relative;
+}
+footer .menu li::before { /*li태그 우측에 점을 찍어주려 함*/
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #555;
+  position: absolute; /* absolute;라고 지정함으로써 block요소가 자동적으로 되는 것이다. */
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  margin: auto;
+}
+footer .menu li:last-child::before { /*li 태그 중에 가장 마지막 요소 last-child*/
+  display: none;
 }
 footer .menu li a {
   color: #ccc;
@@ -811,6 +825,6 @@ footer .menu li a {
   padding: 15px; /*내부 여백*/
   display: block; /* a태그는 inline요소로 padding의 상하 내부여백을 적용할 수 없으므로 block으로 바꿔준다. */
 }
-footer .menu li a.green {
+footer .menu li a.green { /* a.green 은 a 태그의 일치선택자 green을 의미 */
   color: #669900;
 }
