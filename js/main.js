@@ -135,6 +135,6 @@ spyEls.forEach(function(spyEl) {
 });
 
 
-
+//get synchronized Data(Year) info
 const thisYear = document.querySelector('.this-year');
 thisYear.textContent = new Date().getFullYear(); //올해 2022
