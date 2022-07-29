@@ -71,6 +71,14 @@ new Swiper('.promotion .swiper-container', {
     nextEl: '.promotion .swiper-next'
   }
 });
+new Swiper('.awards .swiper-container', {
+  direction: 'horizontal',
+  autoplay: true, // 자동재생 true
+  loop: true, //반복재생 true
+  spaceBetween: 30, //사이사이의 여백 30px
+  slidesPerView: 5, //한번의 페이지에 보여질 슬라이드의 수 5개
+});
+
 
 
 const promotionEl = document.querySelector('.promotion');
@@ -101,7 +109,7 @@ function floatingObject(selector, delay, size) { //매개변수 : 요소, 지연
     y: size, //내려가는 크기(px)
     repeat: -1, //무한반복
     yoyo: true, //내려왔다가 다시 올라가는 효과
-    ease: Power1.easeInOut, // gsap easing 이라고 검색후 -> power1, easeInOut 선택한 결과 
+    ease: Power1.easeInOut, // gsap easing 이라고 검색후 -> power1, easeInOut 선택한 결과
     delay: random(0, delay) //애니메이션 지연시간 (0으로 시작해서 매개변수 delay시간까지의 random한 수)
   });
 }
