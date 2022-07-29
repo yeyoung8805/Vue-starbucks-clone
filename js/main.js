@@ -77,6 +77,10 @@ new Swiper('.awards .swiper-container', {
   loop: true, //반복재생 true
   spaceBetween: 30, //사이사이의 여백 30px
   slidesPerView: 5, //한번의 페이지에 보여질 슬라이드의 수 5개
+  navigation: {
+    prevEl: '.awards .swiper-prev',
+    nextEl: '.awards .swiper-next'
+  }
 });
 
 
