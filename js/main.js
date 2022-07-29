@@ -16,7 +16,7 @@ searchInputEl.addEventListener('blur', function() { //blur 는 focus 이벤트�
   searchInputEl.setAttribute('placeholder', '');
 });
 
-
+const toTopEl = document.querySelector('#to-top');
 const badgeEl = document.querySelector('header .badges');
 // _.throttle(함수, 시간) 함수를 통해 안에 실행되는 기능의 발생횟수를 제한한다.
 window.addEventListener('scroll', _.throttle(function() {
@@ -29,7 +29,7 @@ window.addEventListener('scroll', _.throttle(function() {
       display: 'none'
     });
     // 버튼 보이기!
-    gsap.to('#to-top', .2, {
+    gsap.to(toTopEl, .2, {
       x: 0, //원래 자리로 돌아오도록
     });
   }else {
@@ -39,14 +39,13 @@ window.addEventListener('scroll', _.throttle(function() {
       display: 'block'
     });
     //버튼 숨기기!
-    gsap.to('#to-top', .2, {
+    gsap.to(toTopEl, .2, {
       x: 100, //우측으로 100px만큼 사라지도록
     });
   }
 }, 300));
 
 //버튼 클릭시 최상단으로 이동하도록 만듦
-const toTopEl = document.querySelector('#to-top');
 toTopEl.addEventListener('click', function() {
   gsap.to(window, .7, { //window객체를 통해 화면을 제어한다는 뜻
     scrollTo: 0, // .7초 동안 화면의 위치를 0인 최상단으로 옮겨주겠다는 뜻
